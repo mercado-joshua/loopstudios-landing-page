@@ -1,0 +1,12 @@
+.quicklinks {
+    > .item > .link {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        gap: 1em;
+    }
+}

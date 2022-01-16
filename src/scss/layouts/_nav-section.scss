@@ -1,0 +1,33 @@
+.nav-section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 1.5em;
+    background: #000;
+
+    &.-active {
+        display: block;
+    }
+
+    /// Small devices (portrait tablets and large phones, 600px and up)
+    @media only screen and (min-width: 600px) {
+        padding: 0 3em;
+    }
+
+    /// Medium devices (landscape tablets, 768px and up)
+    @media only screen and (min-width: 768px) {
+        display: block;
+        position: static;
+        background: transparent;
+        min-height: auto;
+        width: auto;
+        padding: 0;
+
+        > .header-section {
+            display: none;
+        }
+    }
+}
